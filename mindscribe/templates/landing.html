@@ -1,0 +1,33 @@
+```html
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-5">
+    <div class="text-center">
+        <h1 class="text-4xl font-bold mb-4">Welcome to MindScribe</h1>
+        <p class="text-lg mb-8">Your personal learning companion</p>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+        <div class="col-span-1">
+            <h2 class="text-2xl font-bold mb-2">Note-Maker</h2>
+            <p>Convert topics or course outlines into visually appealing mind maps.</p>
+        </div>
+        <div class="col-span-1">
+            <h2 class="text-2xl font-bold mb-2">Summarizer</h2>
+            <p>Summarize the content of web pages and generate concise summaries.</p>
+        </div>
+        <div class="col-span-1">
+            <h2 class="text-2xl font-bold mb-2">Contextual AI Chatbot</h2>
+            <p>Engage in immersive learning conversations with various historical figures or subject experts.</p>
+        </div>
+        <div class="col-span-1">
+            <h2 class="text-2xl font-bold mb-2">Custom Study Music Generator</h2>
+            <p>Create your unique ambient study music and manage your study sessions efficiently.</p>
+        </div>
+    </div>
+    <div class="text-center mt-8">
+        <a href="{{ url_for('register') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Started</a>
+    </div>
+</div>
+{% endblock %}
+```

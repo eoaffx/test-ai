@@ -1,0 +1,39 @@
+```html
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mx-auto px-4">
+    <h1 class="text-3xl font-bold text-center my-8">Welcome to MindScribe</h1>
+
+    <div class="grid grid-cols-2 gap-4">
+        <!-- Note-Maker -->
+        <div class="card">
+            <h2 class="text-xl font-bold">Note-Maker</h2>
+            <p>Create beautiful mind maps from your course outlines.</p>
+            <a href="{{ url_for('note_maker') }}" class="btn btn-primary">Go to Note-Maker</a>
+        </div>
+
+        <!-- Summarizer -->
+        <div class="card">
+            <h2 class="text-xl font-bold">Summarizer</h2>
+            <p>Extract key information from any webpage.</p>
+            <a href="{{ url_for('summarizer') }}" class="btn btn-primary">Go to Summarizer</a>
+        </div>
+
+        <!-- AI Chatbot -->
+        <div class="card">
+            <h2 class="text-xl font-bold">AI Chatbot</h2>
+            <p>Engage in immersive learning conversations.</p>
+            <a href="{{ url_for('chatbot') }}" class="btn btn-primary">Go to AI Chatbot</a>
+        </div>
+
+        <!-- Music Generator -->
+        <div class="card">
+            <h2 class="text-xl font-bold">Music Generator</h2>
+            <p>Create your custom study music and manage your study sessions.</p>
+            <a href="{{ url_for('music_generator') }}" class="btn btn-primary">Go to Music Generator</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+```
